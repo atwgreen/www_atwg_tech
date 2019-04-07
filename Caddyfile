@@ -1,0 +1,13 @@
+:2091 {
+    bind 0.0.0.0
+    gzip
+    root /opt/www_atwg_tech/
+    git {
+        repo https://github.com/atwgreen/www_atwg_tech.git
+        branch production
+        hook /webhook "test9278"
+        hook_type generic
+        key /opt/www_atwg_tech/id_rsa
+        path /opt/www_atwg_tech/
+    }
+}
