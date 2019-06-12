@@ -1,13 +1,13 @@
-:2096 {
+:2015 {
     bind 0.0.0.0
     gzip
-    root /opt/www_atwg_tech/
+    root .
+    
     git {
         repo https://github.com/atwgreen/www_atwg_tech.git
         branch master
         hook /webhook "test9278"
-        hook_type generic
-        key /opt/www_atwg_tech/id_rsa
-        path /opt/www_atwg_tech/
+        key ~/.ssh/id_rsa
+        path . 
     }
 }
