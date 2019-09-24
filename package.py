@@ -3,7 +3,7 @@ from Jumpscale import j
 class Package(j.baseclasses.threebot_package):
     """
     to start need to run 
-    kosmos -p "j.tools.threebot_packages.get('atwg_tech',giturl='https://github.com/atwgreen/www_atwg_tech.git',branch='production')"
+    kosmos -p "j.tools.threebot_packages.get('atwg_tech',giturl='https://github.com/atwgreen/www_atwg_tech.git',branch='master')"
     kosmos -p "j.servers.threebot.default.start(web=True, ssl=False)"
     """
     def _init(self, **kwargs):
@@ -50,4 +50,4 @@ class Package(j.baseclasses.threebot_package):
         called when the package is no longer needed and will be removed from the threebot
         :return:
         """
-        pas
+        pass
